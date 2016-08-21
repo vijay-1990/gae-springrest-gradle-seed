@@ -10,3 +10,5 @@ build/
 temp/
 out/
 bin/
+.classpath
+.project
