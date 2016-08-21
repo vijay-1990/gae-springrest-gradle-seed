@@ -18,6 +18,7 @@ public class GreetingController {
 
     @RequestMapping("/greeting")
     public String greeting(@RequestParam(value="name", defaultValue="World") String name) {
+    	if(name == null) name = "World";
 		logger.info("####Inside Greeting Service####");
 		return gson.toJson(new Greeting(counter.incrementAndGet(),
                             String.format(template, name)));
