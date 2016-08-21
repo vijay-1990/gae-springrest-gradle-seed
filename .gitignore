@@ -1,2 +1,12 @@
 # Google App Engine generated folder
 appengine-generated/
+.settings/
+src/main/webapp/WEB-INF/lib
+src/main/webapp/WEB-INF/classes
+.gradle/
+.idea/
+.project/
+build/
+temp/
+out/
+bin/
