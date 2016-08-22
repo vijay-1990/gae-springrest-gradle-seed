@@ -20,3 +20,12 @@ build -> reports -> tests directory
 
 This will do unit testing on the sourcecode with debug:true options and will do instrumentation on the classes
 and will produce the results in build -> reports -> jacoco directory
+
+## Deploying App to cloud
+	$ gradle appengineStage
+	$ gcloud app deploy build/staged-app/app.yaml --project [app id] --version [some version]
+
+NOTES:
+
+* You must explicitly define all config files your want to upload (cron.yaml, etc)
+* This does not work with EAR formatted projects.
